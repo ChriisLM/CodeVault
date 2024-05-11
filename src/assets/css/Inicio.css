@@ -1,0 +1,30 @@
+.main-container{
+    height: 1200px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%), url(../../../public/images/fondo1.png) ;
+}
+
+.div-separador{
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(0deg, rgba(57,57,57,1) -10%, rgba(0,0,0,1) 100%);
+}
+
+.proyects-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    row-gap: 10px;
+}
+
+.slider-proyects{
+    width: 90%;
+    height: 330px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
