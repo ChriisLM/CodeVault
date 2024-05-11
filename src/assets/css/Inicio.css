@@ -12,20 +12,19 @@
 .proyects-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-center;
-    padding-top: 20px;
-    row-gap: 10px;
 }
 
-.slider-proyects{
-    width: 90%;
-    height: 330px;
-    background-color: white;
-    color: black;
+
+.slider-inicio{
+    padding-top: 20px;
+}
+
+.cards-proyects{
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
 }
