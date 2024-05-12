@@ -16,22 +16,9 @@ function Inicio() {
             <SliderProyects proyectos={proyectsData} />
           </div>
           <div className="cards-proyects">
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
-            <CardProyect />
+            {proyectsData.map((proyectoData)=>(
+              <CardProyect proyecto={proyectoData}/>
+            ))}
           </div>
 
         </section>

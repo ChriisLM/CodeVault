@@ -23,7 +23,6 @@ function SliderProyects({ proyectos }) {
                     <div key={index} className={index === currentIndex ? "slide active" : "slide"}>
                         <a href={proyecto.enlace} target="_blank" rel="noopener noreferrer">
                             <img src={proyecto.imagen} alt={proyecto.titulo} />
-                            <h3>{proyecto.titulo}</h3>
                         </a>
                     </div>
                 ))}
