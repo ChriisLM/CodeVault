@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../assets/css/Header.css"
 import Logo from "../assets/icons/logo"
 
@@ -7,12 +8,14 @@ function Header() {
     <header>
       <div className="header-container">
         <div className="container-logo">
-          <Logo/>
+          <Logo />
         </div>
-        <div className="container-title">
-          <h1 className="header-title1">Code</h1>
-          <h1 className="header-title2">Vault</h1>
-        </div>
+        <Link to={"/"} className="link-title">
+          <div className="container-title">
+            <h1 className="header-title1">Code</h1>
+            <h1 className="header-title2">Vault</h1>
+          </div>
+        </Link>
         <div className="container-nav">
           <nav className="header-nav">
             <ul className="header-ul">
