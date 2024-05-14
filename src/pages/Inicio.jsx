@@ -16,8 +16,8 @@ function Inicio() {
             <SliderProyects proyectos={proyectsData} />
           </div>
           <div className="cards-proyects">
-            {proyectsData.map((proyectoData)=>(
-              <CardProyect proyecto={proyectoData}/>
+            {proyectsData.map((proyectoData, index1)=>(
+              <CardProyect proyecto={proyectoData} key={index1}/>
             ))}
           </div>
 
