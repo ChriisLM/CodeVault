@@ -1,0 +1,59 @@
+.container-animacion1{
+    position: relative;
+    background-color: #E56262;
+}
+
+.a1-circulo1, .a1-circulo2, .a1-circulo3{
+    position: absolute;
+    top: 125px;
+    right: 100px;
+    width:100px;
+	height:100px;
+	background-color:#fff;
+	border-radius:50%;
+	z-index:10;
+    box-shadow: 3px 3px 20px 0px #000;
+}
+
+.a1-circulo1{
+    animation: loading-cir1 3s cubic-bezier(0.50, 0.00, 0.50, 1) 0s alternate infinite both;
+}
+
+.a1-circulo2{
+    z-index: 20;
+    transform: scale(.75);
+	animation: loading-cir2 3s cubic-bezier(0.50, 0.00, 0.50, 1) 0s alternate infinite both;
+}
+
+.a1-circulo3{
+    z-index: 30;
+    transform: scale(.30);
+	animation: loading-cir3 3s cubic-bezier(0.50, 0.00, 0.50, 1) 0s alternate infinite both;
+}
+
+@keyframes loading-cir1{
+    0%,10%{
+        transform: scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes loading-cir2{
+    0%,40%{
+        transform: scale(0);
+    }
+    100%{
+        transform:scale(.75);
+    }
+}
+
+@keyframes loading-cir3{
+    0%,70%{
+        transform: scale(0);
+    }
+    100%{
+        transform:scale(.30);
+    }
+}
