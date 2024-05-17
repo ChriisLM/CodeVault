@@ -1,6 +1,7 @@
 .container-animacion1{
     position: relative;
     background-color: #E56262;
+    overflow: hidden;
 }
 
 .a1-circulo1, .a1-circulo2, .a1-circulo3{

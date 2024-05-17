@@ -1,0 +1,135 @@
+.container-animacion2{
+    position: relative;
+    background-color: #1f1f1f;
+    overflow: hidden;
+}
+
+.a2-ball{
+  position: absolute;
+  top: 136px;
+  left: 110px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+}
+  
+  /* Blubb Styles */
+.a2-burbuja1,
+.a2-burbuja2,
+.a2-burbuja3,
+.a2-burbuja4,
+.a2-burbuja5,
+.a2-burbuja6,
+.a2-burbuja7,
+.a2-burbuja8 {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  width: 50px;
+  height: 50px;
+}
+
+.a2-burbuja1 { transform: rotate(30deg); }
+.a2-burbuja2 { transform: rotate(60deg); }
+.a2-burbuja3 { transform: rotate(90deg); }
+.a2-burbuja4 { transform: rotate(120deg); }
+.a2-burbuja5 { transform: rotate(150deg); }
+.a2-burbuja6 { transform: rotate(180deg); }
+.a2-burbuja7 { transform: rotate(210deg); }
+.a2-burbuja8 { transform: rotate(240deg); }
+  
+.a2-burbuja1::after,
+.a2-burbuja2::after,
+.a2-burbuja3::after,
+.a2-burbuja4::after,
+.a2-burbuja5::after,
+.a2-burbuja6::after,
+.a2-burbuja7::after,
+.a2-burbuja8::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.a2-burbuja1:after { transform-origin: 37px 37px; animation: rotate 2.7s ease-in-out 0.2s infinite; }
+.a2-burbuja2:after { transform-origin: 38px 38px; animation: rotate 2.8s ease-in-out 0.4s infinite; }
+.a2-burbuja3:after { transform-origin: 39px 39px; animation: rotate 2.9s ease-in-out 0.6s infinite; }
+.a2-burbuja4:after { transform-origin: 40px 40px; animation: rotate 3s ease-in-out 0.8s infinite; }
+.a2-burbuja5:after { transform-origin: 41px 41px; animation: rotate 3.1s ease-in-out 1s infinite; }
+.a2-burbuja6:after { transform-origin: 42px 42px; animation: rotate 3.2s ease-in-out 1.2s infinite; }
+.a2-burbuja7:after { transform-origin: 43px 43px; animation: rotate 3.3s ease-in-out 1.4s infinite; }
+.a2-burbuja8:after { transform-origin: 44px 44px; animation: rotate 3.4s ease-in-out 1.6s infinite; }
+
+  /* Particulas Styles */
+.a2-particula1,
+.a2-particula2,
+.a2-particula3,
+.a2-particula4,
+.a2-particula5,
+.a2-particula6,
+.a2-particula7,
+.a2-particula8,
+.a2-particula9,
+.a2-particula10 {
+  position: absolute;
+  top: 160px;
+  left: 144px;
+  background: #fff;
+}
+  
+.a2-particula1 { width: 8px; height: 8px; transform: rotate(30deg); }
+.a2-particula2 { width: 9px; height: 9px; transform: rotate(60deg); }
+.a2-particula3 { width: 10px; height: 10px; transform: rotate(90deg); }
+.a2-particula4 { width: 11px; height: 11px; transform: rotate(120deg); }
+.a2-particula5 { width: 12px; height: 12px; transform: rotate(150deg); }
+.a2-particula6 { width: 13px; height: 13px; transform: rotate(180deg); }
+.a2-particula7 { width: 14px; height: 14px; transform: rotate(210deg); }
+.a2-particula8 { width: 15px; height: 15px; transform: rotate(240deg); }
+.a2-particula9 { width: 16px; height: 16px; transform: rotate(270deg); }
+.a2-particula10 { width: 17px; height: 17px; transform: rotate(300deg); }
+
+.a2-particula1:after,
+.a2-particula2:after,
+.a2-particula3:after,
+.a2-particula4:after,
+.a2-particula5:after,
+.a2-particula6:after,
+.a2-particula7:after,
+.a2-particula8:after,
+.a2-particula9:after,
+.a2-particula10:after {
+  content: '';
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.a2-particula1:after { width: 8px; height: 8px; transform-origin: 53px 53px; animation: rotate 2.7s ease-in-out 0.2s infinite; }
+.a2-particula2:after { width: 9px; height: 9px; transform-origin: 54px 54px; animation: rotate 2.8s ease-in-out 0.4s infinite; }
+.a2-particula3:after { width: 10px; height: 10px; transform-origin: 55px 55px; animation: rotate 2.9s ease-in-out 0.6s infinite; }
+.a2-particula4:after { width: 11px; height: 11px; transform-origin: 56px 56px; animation: rotate 3s ease-in-out 0.8s infinite; }
+.a2-particula5:after { width: 12px; height: 12px; transform-origin: 57px 57px; animation: rotate 3.1s ease-in-out 1s infinite; }
+.a2-particula6:after { width: 13px; height: 13px; transform-origin: 58px 58px; animation: rotate 3.2s ease-in-out 1.2s infinite; }
+.a2-particula7:after { width: 14px; height: 14px; transform-origin: 59px 59px; animation: rotate 3.3s ease-in-out 1.4s infinite; }
+.a2-particula8:after { width: 15px; height: 15px; transform-origin: 60px 60px; animation: rotate 3.4s ease-in-out 1.6s infinite; }
+.a2-particula9:after { width: 16px; height: 16px; transform-origin: 61px 61px; animation: rotate 3.5s ease-in-out 1.8s infinite; }
+.a2-particula10:after { width: 17px; height: 17px; transform-origin: 62px 62px; animation: rotate 3.6s ease-in-out 2s infinite; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
+
+.paused,
+.paused::after {
+  animation-play-state: paused;
+}
