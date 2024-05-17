@@ -6,8 +6,8 @@
 
 .a2-ball{
   position: absolute;
-  top: 136px;
-  left: 110px;
+  top: 130px;
+  left: 105px;
   width: 90px;
   height: 90px;
   background: #fff;
@@ -25,7 +25,7 @@
 .a2-burbuja8 {
   position: absolute;
   top: 150px;
-  left: 130px;
+  left: 125px;
   width: 50px;
   height: 50px;
 }
@@ -77,8 +77,8 @@
 .a2-particula9,
 .a2-particula10 {
   position: absolute;
-  top: 160px;
-  left: 144px;
+  top: 166px;
+  left: 141px;
   background: #fff;
 }
   

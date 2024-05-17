@@ -32,3 +32,9 @@
     width: 300px;
     height: 350px;
 }
+
+.boton{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

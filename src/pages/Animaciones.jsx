@@ -3,6 +3,7 @@ import Header from "../Components/Header"
 import "../assets/css/Animaciones.css"
 import "../assets/css/animaciones/Animacion1.css"
 import "../assets/css/animaciones/Animacion2.css"
+import "../assets/css/animaciones/Animacion3.css"
 
 function Animaciones() {
 
@@ -30,7 +31,7 @@ function Animaciones() {
                         <div className={`a1-circulo1 ${isPaused('animacion1') ? 'paused' : ''}`}></div>
                         <div className={`a1-circulo2 ${isPaused('animacion1') ? 'paused' : ''}`}></div>
                         <div className={`a1-circulo3 ${isPaused('animacion1') ? 'paused' : ''}`}></div>
-                        <button id="toggle-animation1" onClick={() => toggleAnimation('animacion1')}>
+                        <button className="boton" id="toggle-animation1" onClick={() => toggleAnimation('animacion1')}>
                             {isPaused('animacion1') ? 'Play' : 'Pause'}
                         </button>
                     </div>
@@ -55,15 +56,36 @@ function Animaciones() {
                         <div className={`a2-particula8 ${isPaused('animacion2') ? 'paused' : ''}`}></div>
                         <div className={`a2-particula9 ${isPaused('animacion2') ? 'paused' : ''}`}></div>
                         <div className={`a2-particula10 ${isPaused('animacion2') ? 'paused' : ''}`}></div>
-                        <button id="toggle-animation2" onClick={() => toggleAnimation('animacion2')}>
+                        <button className="boton" id="toggle-animation2" onClick={() => toggleAnimation('animacion2')}>
                             {isPaused('animacion2') ? 'Play' : 'Pause'}
                         </button>
                     </div>
 
                     <div className="container-animacion3 card">
-
+                        <div className={`a3-gota ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                        <div className={`a3-gota-anillo ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                        <svg className={`a3-octagono ${isPaused('animacion3') ? 'paused' : ''}`}>
+                            <polygon points="30,0 70,0 100,30 100,70 70,100 30,100 0,70 0,30" />
+                        </svg>
+                        <svg className={`a3-triangulo ${isPaused('animacion3') ? 'paused' : ''}`}>
+                            <polygon points="53,0 106,90 0,90" />
+                        </svg>
+                        <div className={`a3-octa-chispas ${isPaused('animacion3') ? 'paused' : ''}`}>
+                            <div className={`a3-chispa s1 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                            <div className={`a3-chispa s2 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                            <div className={`a3-chispa s3 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                            <div className={`a3-chispa s4 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                        </div>
+                        <div className={`a3-tri-chispas ${isPaused('animacion3') ? 'paused' : ''}`}>
+                            <div className={`a3-chispa s1 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                            <div className={`a3-chispa s2 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                            <div className={`a3-chispa s3 ${isPaused('animacion3') ? 'paused' : ''}`}></div>
+                        </div>
+                        <button className="boton" id="toggle-animation3" onClick={() => toggleAnimation('animacion3')}>
+                            {isPaused('animacion3') ? 'Play' : 'Pause'}
+                        </button>
                     </div>
-                    
+
                     <div className="container-animacion4 card"></div>
                     <div className="container-animacion5 card"></div>
                     <div className="container-animacion6 card"></div>
