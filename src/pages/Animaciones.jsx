@@ -4,6 +4,8 @@ import "../assets/css/Animaciones.css"
 import "../assets/css/animaciones/Animacion1.css"
 import "../assets/css/animaciones/Animacion2.css"
 import "../assets/css/animaciones/Animacion3.css"
+import "../assets/css/animaciones/Animacion4.css"
+import "../assets/css/animaciones/Animacion5.css"
 
 function Animaciones() {
 
@@ -86,8 +88,32 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion4 card"></div>
-                    <div className="container-animacion5 card"></div>
+                    <div className="container-animacion4 card">
+                        <div className={`a4-circulo ${isPaused('animacion4') ? 'paused' : ''}`}>
+                            <div className={`a4-cielo ${isPaused('animacion4') ? 'paused' : ''}`}></div>
+                            <div className={`a4-sol ${isPaused('animacion4') ? 'paused' : ''}`}></div>
+                            <div className={`a4-lado-izq ${isPaused('animacion4') ? 'paused' : ''}`}></div>
+                            <div className={`a4-lado-der ${isPaused('animacion4') ? 'paused' : ''}`}></div>
+                            <div className={`a4-sombra ${isPaused('animacion4') ? 'paused' : ''}`}></div>
+                            <div className={`a4-suelo ${isPaused('animacion4') ? 'paused' : ''}`}></div>
+                        </div>
+                        <button className="boton" id="toggle-animation4" onClick={() => toggleAnimation('animacion4')}>
+                            {isPaused('animacion4') ? 'Play' : 'Pause'}
+                        </button>
+                    </div>
+
+                    <div className="container-animacion5 card">
+                        <div className={`a5-arriba ${isPaused('animacion5') ? 'paused' : ''}`}></div>
+                        <div className={`a5-abajo ${isPaused('animacion5') ? 'paused' : ''}`}></div>
+                        <div className={`a5-elipse ${isPaused('animacion5') ? 'paused' : ''}`}>
+                            <div className={`a5-gris ${isPaused('animacion5') ? 'paused' : ''}`}></div>
+                            <div className={`a5-verde ${isPaused('animacion5') ? 'paused' : ''}`}></div>
+                        </div>
+                        <button className="boton" id="toggle-animation4" onClick={() => toggleAnimation('animacion5')}>
+                            {isPaused('animacion5') ? 'Play' : 'Pause'}
+                        </button>
+                    </div>
+
                     <div className="container-animacion6 card"></div>
                     <div className="container-animacion7 card"></div>
                     <div className="container-animacion8 card"></div>

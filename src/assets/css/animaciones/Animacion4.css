@@ -1,0 +1,198 @@
+.container-animacion4 {
+  position: relative;
+  background-color: #272C34;
+  overflow: hidden;
+}
+
+.a4-circulo {
+	position: absolute;
+    top: 85px;
+    left: 60px;
+	overflow: hidden;
+	clip-path: circle(90px at 90px 90px);
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+.a4-cielo {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 124px;
+    background: #7DDFFC;		
+    animation: cielo-oscuro 4s cubic-bezier(.4,0,.49,1) infinite;
+}
+	
+.a4-sol {
+    position: absolute;
+    z-index: 2;
+    top: 7px;
+    left: 73px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #FFEF00;
+    transform-origin: 50% 400%;
+    animation: sol-hacia-abajo 4s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+.a4-lado-izq {
+    position: absolute;
+    top: 67px;
+    left: 35px;
+    height: 57px;
+    width: 116px;
+    background: #F4F4F4;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+    animation: piramide-sombreado 4s cubic-bezier(.4,0,.49,1) infinite;
+}
+	
+.a4-lado-der {
+    position: absolute;
+    top: 67px;
+    left: 93px;
+    height: 57px;
+    width: 58px;
+    background: #DDDADA;
+    clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+    animation: piramide-sombreado 4s cubic-bezier(.4,0,.49,1) infinite reverse;
+}
+
+.a4-sombra {
+    position: absolute;
+    z-index: 2;
+    top: 124px;
+    left: -80px;
+    height: 30px;
+    width: 360px;
+    background: rgba(0,0,0,0.2);
+    transform-origin: 50% 0%;
+    clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+    animation: sombra-piso 4s cubic-bezier(.4,0,.49,1) infinite;
+}
+	
+.a4-suelo {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: #F0DE75;
+    animation: arena-oscura 4s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+
+@keyframes sol-hacia-abajo {
+
+    0% {
+		background: #F57209;
+        transform: rotate(-70deg);
+    }
+	
+	30% {
+		background: #FFEF00;
+		transform: rotate(-28deg);
+	}
+	
+	70% {
+		background: #FFEF00;
+	}
+
+    100% {
+		background: #F57209;
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes cielo-oscuro {
+
+    0% {
+        background: #272C34;
+    }
+	
+	30% {
+		background: #7DDFFC;
+	}
+	
+	70% {
+		background: #7DDFFC;
+	}
+
+    100% {
+        background: #272C34;
+    }
+}
+
+@keyframes piramide-sombreado {
+
+    0% {
+        background: #272C34;
+    }
+	
+	30% {
+		background: #F4F4F4;
+	}
+	
+	70% {
+		background: #DDDADA;
+	}
+
+    100% {
+        background: #272C34;
+    }
+}
+
+@keyframes sombra-piso {
+
+    0% {
+		transform: scaleY(0);
+	    clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+    }
+	
+	30% {
+		transform: scaleY(1);
+	    clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+	}
+	
+	55% {
+		transform: scaleY(.4);
+	}
+
+	75% {
+		transform: scaleY(1);
+	}
+
+    100% {
+		transform: scaleY(0);
+	    clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+    }
+}
+
+@keyframes arena-oscura {
+
+    0% {
+        background: #272C34;
+    }
+	
+	30% {
+		background: #F0DE75;
+	}
+	
+	70% {
+		background: #F0DE75;
+	}
+
+    100% {
+        background: #272C34;
+    }
+}
+
+.paused,
+.paused::after,
+.pausec::before {
+  animation-play-state: paused;
+}
