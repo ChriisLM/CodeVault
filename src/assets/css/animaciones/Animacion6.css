@@ -1,0 +1,100 @@
+.container-animacion6{
+    position: relative;
+    overflow: hidden;
+    background-color: #607D8B;
+}
+
+.a6-linea {
+    box-sizing: border-box;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 155px;
+    left: 130px;
+    background: #fff;
+}
+
+  
+.a6-linea-1 { --i: 1; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-2 { --i: 2; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-3 { --i: 3; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-4 { --i: 4; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-5 { --i: 5; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-6 { --i: 6; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-7 { --i: 7; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-8 { --i: 8; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-9 { --i: 9; animation: lineAnimation 10s ease-in-out infinite; }
+.a6-linea-10 { --i: 10; animation: lineAnimation 10s ease-in-out infinite; }
+  
+@keyframes lineAnimation {
+    0% {
+        transform: rotate(0) translate(0, 0) scale(0.01);
+    }
+    5% {
+        transform: rotate(0) translate(0, 0) scale(1);
+    }
+    15% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, 0) scale(1);
+    }
+    20% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -100px) scale(0.25, 1);
+    }
+    25% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+    }
+    30% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -100px) scale(1, 0.25) rotate(179deg);
+    }
+    35% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -60px) scale(1, 0.1);
+    }
+    40% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -60px) scale(1, 0.1) translate(-30px, 0);
+    }
+    45% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -60px) scale(1, 0.1) translate(30px, 0);
+    }
+    50% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -60px) scale(0.1, 1);
+    }
+    55% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -60px) scale(0.5, 0.1);
+        border-radius: 0;
+    }
+    60% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -80px) scale(0.5, 0.5) rotate(179deg);
+        border-radius: 50%;
+    }
+    65% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, 0) scale(0.2, 0.2);
+        border-radius: 50%;
+    }
+    70% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -100px) scale(0.25, 1);
+        border-radius: 0;
+    }
+    75% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -100px) scale(0.25, 0.25);
+    }
+    80% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -50px) scale(0.5, 0.5);
+    }
+    85% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -50px) scale(0.5, 0.5) rotate(179deg) translate(-50px, 50px);
+    }
+    90% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -30px) scale(0.5, 0.1);
+    }
+    95% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -10px) scale(0.1, 0.5);
+    }
+    100% {
+        transform: rotate(calc(var(--i) * 36deg)) translate(0, -300px) scale(0.1, 0.5);
+    }
+}
+
+.paused,
+.paused::after,
+.pausec::before {
+  animation-play-state: paused;
+}

@@ -6,6 +6,8 @@ import "../assets/css/animaciones/Animacion2.css"
 import "../assets/css/animaciones/Animacion3.css"
 import "../assets/css/animaciones/Animacion4.css"
 import "../assets/css/animaciones/Animacion5.css"
+import "../assets/css/animaciones/Animacion6.css"
+import "../assets/css/animaciones/Animacion7.css"
 
 function Animaciones() {
 
@@ -19,6 +21,9 @@ function Animaciones() {
     };
 
     const isPaused = (animationId) => pausedAnimations[animationId];
+
+    //variables animaciones
+    const a7puntos = Array.from({ length: 18 }, (_, i) => i + 1);
 
     return (
         <>
@@ -114,8 +119,33 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion6 card"></div>
-                    <div className="container-animacion7 card"></div>
+                    <div className="container-animacion6 card">
+                        <div className={`a6-linea a6-linea-1 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-2 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-3 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-4 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-5 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-6 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-7 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-8 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-9 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-10 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <button className="boton" id="toggle-animation6" onClick={() => toggleAnimation('animacion6')}>
+                            {isPaused('animacion6') ? 'Play' : 'Pause'}
+                        </button>
+                    </div>
+
+                    <div className="container-animacion7 card">
+                        <div className={`a7-puntos ${isPaused('animacion7') ? 'paused' : ''}`}>
+                            {a7puntos.map(i => (
+                                <div key={i} className={`a7-punto a7-punto-${i} ${isPaused('animacion7') ? 'paused' : ''}`}></div>
+                            ))}
+                        </div>
+                        <button className="boton" id="toggle-animation7" onClick={() => toggleAnimation('animacion7')}>
+                            {isPaused('animacion7') ? 'Play' : 'Pause'}
+                        </button>
+                    </div>
+
                     <div className="container-animacion8 card"></div>
                     <div className="container-animacion9 card"></div>
                     <div className="container-animacion10 card"></div>
