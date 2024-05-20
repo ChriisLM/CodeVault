@@ -1,0 +1,14 @@
+.container-animacion8{
+    position: relative;
+    background-color: #4C4BA2;
+    overflow: hidden;
+}
+
+
+
+
+.paused,
+.paused::after,
+.pausec::before {
+  animation-play-state: paused;
+}

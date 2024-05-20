@@ -146,7 +146,21 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion8 card"></div>
+                    <div className="container-animacion8 card">
+                        <div className={`a6-linea a6-linea-1 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-2 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-3 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-4 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-5 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-6 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-7 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-8 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-9 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <div className={`a6-linea a6-linea-10 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
+                        <button className="boton" id="toggle-animation6" onClick={() => toggleAnimation('animacion6')}>
+                            {isPaused('animacion6') ? 'Play' : 'Pause'}
+                        </button>
+                    </div>
                     <div className="container-animacion9 card"></div>
                     <div className="container-animacion10 card"></div>
                     <div className="container-animacion11 card"></div>
