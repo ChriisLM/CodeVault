@@ -12,6 +12,7 @@ import "../assets/css/animaciones/Animacion8.css"
 import "../assets/css/animaciones/Animacion9.css"
 import "../assets/css/animaciones/Animacion10.css"
 import "../assets/css/animaciones/Animacion11.css"
+import "../assets/css/animaciones/Animacion12.css"
 
 function Animaciones() {
 
@@ -192,13 +193,23 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion12 card"></div>
-                    <div className="container-animacion13 card"></div>
-                    <div className="container-animacion14 card"></div>
-                    <div className="container-animacion15 card"></div>
-                    <div className="container-animacion16 card"></div>
-                    <div className="container-animacion17 card"></div>
-                    <div className="container-animacion18 card"></div>
+                    <div className="container-animacion12 card">
+                        <div className={`a12-centro ${isPaused('animacion12') ? 'paused' : ''}`}>
+                            <div className={`a12-carrusel ${isPaused('animacion12') ? 'paused' : ''}`}>
+                                <div className={`a12-pre ${isPaused('animacion12') ? 'paused' : ''}`} >I'm a </div>
+                                <div className={`a12-change_outer ${isPaused('animacion12') ? 'paused' : ''}`} >
+                                    <div className={`a12-change_inner ${isPaused('animacion12') ? 'paused' : ''}`} >
+                                        <div className={`a12-element ${isPaused('animacion12') ? 'paused' : ''}`}>Panther</div>
+                                        <div className={`a12-element ${isPaused('animacion12') ? 'paused' : ''}`}>Leopard</div>
+                                        <div className={`a12-element ${isPaused('animacion12') ? 'paused' : ''}`}>Tiger</div>
+                                        <div className={`a12-element ${isPaused('animacion12') ? 'paused' : ''}`}>Jaguar</div>
+                                        <div className={`a12-element ${isPaused('animacion12') ? 'paused' : ''}`}>Panther</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
             </article>
         </>

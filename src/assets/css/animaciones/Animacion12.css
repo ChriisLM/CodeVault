@@ -1,0 +1,75 @@
+.container-animacion12{
+    position: relative;
+    background-color: #f39c12;
+    overflow: hidden;
+}	
+
+.a12-centro {
+    position: absolute;
+    top: 44.5%;
+    left: 0;
+    right: 0;
+    margin-top: (30px * 1.5) / -2;
+}
+  
+.a12-carrusel {
+    position: relative;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	line-height: calc(30px * 1.5);
+	height: calc(30px * 1.5) ;
+}
+  
+.a12-carrusel .a12-pre {
+    position: absolute;
+    top: 0;
+    right: 56%;
+    height: calc(30px * 1.5) ;
+    text-shadow: 2px 2px 2px #e67e22;
+}
+  
+.a12-carrusel .a12-change_outer {
+    position: absolute;
+    top: 0;
+    left: 46%;
+    text-align: left;
+    height: calc(30px * 1.5) ;
+    overflow: hidden;
+}
+  
+.a12-carrusel .a12-change_inner {
+    position: relative;
+    animation: a12-rotate 8s ease-in-out infinite;
+} 
+
+.a12-carrusel .a12-element {
+    display: block;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #e67e22;
+}
+  
+@keyframes a12-rotate {
+    0%, 20% {
+      transform: translateY(0);
+    }
+    25%, 45% {
+      transform: translateY(calc(30px * -1.5));
+    }
+    50%, 70% {
+      transform: translateY(calc(30px * -3));
+    }
+    75%, 95% {
+      transform: translateY(calc(30px * -4.5));
+    }
+    100% {
+      transform: translateY(calc(30px * -6));
+    }
+}
+
+
+.paused,
+.paused::after,
+.pausec::before {
+  animation-play-state: paused;
+}
