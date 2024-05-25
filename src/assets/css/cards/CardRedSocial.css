@@ -1,0 +1,94 @@
+.CRS-container{
+    background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #786450;
+}
+
+.CRS-info-container{
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.CRS-perfil-container{
+    float: left;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.CRS-perfil-container .CRS-imagen{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 38px auto 0 auto;
+    cursor: pointer;
+}
+
+.CRS-perfil-container .CRS-imagen .CRS-circulo-1{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 76px;
+    height: 76px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #786450 #786450 #786450 transparent;
+    border-width: 1px;
+    border-radius: 50%;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.CRS-perfil-container .CRS-imagen .CRS-circulo-2{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 82px;
+    height: 82px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #786450 transparent #786450 #786450;
+    border-width: 1px;
+    border-radius: 50%;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.CRS-perfil-container .CRS-imagen img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.CRS-perfil-container .CRS-imagen:hover .CRS-circulo-1{
+    transform: rotate(360deg);
+}
+
+.CRS-perfil-container .CRS-imagen:hover .CRS-circulo-2{
+    transform: rotate(-360deg);
+}
+
+.CRS-nombre{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.CRS-trabajo{
+    font-size: 11px;
+    line-height: 15px;
+}
+
+
+
+
