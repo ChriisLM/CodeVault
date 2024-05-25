@@ -39,7 +39,7 @@ function Animaciones() {
                 </section>
                 <section className="projects-container">
 
-                    <div className="container-animacion1 card">
+                    <div className="container-animacion1 card-animaciones">
                         <div className={`a1-circulo1 ${isPaused('animacion1') ? 'paused' : ''}`}></div>
                         <div className={`a1-circulo2 ${isPaused('animacion1') ? 'paused' : ''}`}></div>
                         <div className={`a1-circulo3 ${isPaused('animacion1') ? 'paused' : ''}`}></div>
@@ -48,7 +48,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion2 card">
+                    <div className="container-animacion2 card-animaciones">
                         <div className={`a2-ball ${isPaused('animacion2') ? 'paused' : ''}`}></div>
                         <div className={`a2-burbuja1 ${isPaused('animacion2') ? 'paused' : ''}`}></div>
                         <div className={`a2-burbuja2 ${isPaused('animacion2') ? 'paused' : ''}`}></div>
@@ -73,7 +73,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion3 card">
+                    <div className="container-animacion3 card-animaciones">
                         <div className={`a3-gota ${isPaused('animacion3') ? 'paused' : ''}`}></div>
                         <div className={`a3-gota-anillo ${isPaused('animacion3') ? 'paused' : ''}`}></div>
                         <svg className={`a3-octagono ${isPaused('animacion3') ? 'paused' : ''}`}>
@@ -98,7 +98,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion4 card">
+                    <div className="container-animacion4 card-animaciones">
                         <div className={`a4-circulo ${isPaused('animacion4') ? 'paused' : ''}`}>
                             <div className={`a4-cielo ${isPaused('animacion4') ? 'paused' : ''}`}></div>
                             <div className={`a4-sol ${isPaused('animacion4') ? 'paused' : ''}`}></div>
@@ -112,7 +112,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion5 card">
+                    <div className="container-animacion5 card-animaciones">
                         <div className={`a5-arriba ${isPaused('animacion5') ? 'paused' : ''}`}></div>
                         <div className={`a5-abajo ${isPaused('animacion5') ? 'paused' : ''}`}></div>
                         <div className={`a5-elipse ${isPaused('animacion5') ? 'paused' : ''}`}>
@@ -124,7 +124,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion6 card">
+                    <div className="container-animacion6 card-animaciones">
                         <div className={`a6-linea a6-linea-1 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
                         <div className={`a6-linea a6-linea-2 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
                         <div className={`a6-linea a6-linea-3 ${isPaused('animacion6') ? 'paused' : ''}`}></div>
@@ -140,7 +140,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion7 card">
+                    <div className="container-animacion7 card-animaciones">
                         <div className={`a7-puntos ${isPaused('animacion7') ? 'paused' : ''}`}>
                             {a7puntos.map(i => (
                                 <div key={i} className={`a7-punto a7-punto-${i} ${isPaused('animacion7') ? 'paused' : ''}`}></div>
@@ -151,7 +151,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion8 card">
+                    <div className="container-animacion8 card-animaciones">
                         {[...Array(20).keys()].map(i => (
                             <div key={i} className={`a8-rect a8-rect-${i + 1} ${isPaused('animacion8') ? 'paused' : ''}`}></div>
                         ))}
@@ -160,7 +160,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion9 card">
+                    <div className="container-animacion9 card-animaciones">
                         {Array.from({ length: 18 }, (_, i) => (
                             <div key={i} className={`a9-ellipse a9-ellipse-${i + 1} ${isPaused('animacion9') ? 'paused' : ''}`}></div>
                         ))}
@@ -169,7 +169,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion10 card">
+                    <div className="container-animacion10 card-animaciones">
                         <div className={`a10-centro ${isPaused('animacion10') ? 'paused' : ''}`}>
                             {Array.from({ length: 10 }, (_, i) => (
                                 <div key={i} className={`a10-anillo a10-anillo-${i + 1} ${isPaused('animacion10') ? 'paused' : ''}`}></div>
@@ -180,7 +180,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion11 card">
+                    <div className="container-animacion11 card-animaciones">
                         <div className={`a11-centro ${isPaused('animacion11') ? 'paused' : ''}`}>
                             <div className={`a11-bola ${isPaused('animacion11') ? 'paused' : ''}`}>
                                 {Array.from({ length: 6 }, (_, i) => (
@@ -193,7 +193,7 @@ function Animaciones() {
                         </button>
                     </div>
 
-                    <div className="container-animacion12 card">
+                    <div className="container-animacion12 card-animaciones">
                         <div className={`a12-centro ${isPaused('animacion12') ? 'paused' : ''}`}>
                             <div className={`a12-carrusel ${isPaused('animacion12') ? 'paused' : ''}`}>
                                 <div className={`a12-pre ${isPaused('animacion12') ? 'paused' : ''}`} >I'm a </div>
