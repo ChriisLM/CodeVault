@@ -1,3 +1,4 @@
+import CardClima from "../Components/Cards/CardClima"
 import CardRedSocial from "../Components/Cards/CardRedSocial"
 import Header from "../Components/Header"
 import "../assets/css/Cards.css"
@@ -13,7 +14,7 @@ function Cards() {
                 </section>
                 <section className="cards-container">
                     <CardRedSocial/>
-                    <div className="card"></div>
+                    <CardClima/>
                     <div className="card"></div>
                     <div className="card"></div>
                     <div className="card"></div>

@@ -89,6 +89,68 @@
     line-height: 15px;
 }
 
+.CRS-botones{
+    margin-top: 33px;
+}
+
+.CRS-botones .CRS-btn{
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    border-radius: 15px;
+    border: #786450 solid 1px;
+    background: none;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    color: #786450;
+}
+
+.CRS-botones .CRS-btn:hover {
+    background-color: #786450;
+    color: white;
+}
+
+.CRS-estadisticas{
+    float: left;
+}
+
+.CRS-estadisticas .CRS-caja{
+    box-sizing: border-box;
+    width: 120px;
+    height: 100px;
+    background: #F5E8DF;
+    transition: all .4s ease-in-out;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.CRS-estadisticas .CRS-caja:hover{
+    background: #E1CFC2;
+    cursor: pointer;
+}
+
+.CRS-estadisticas .CRS-caja:nth-child(2) {
+    margin: 1px 0;
+}
+
+.CRS-estadisticas .CRS-caja span{
+    display: block;
+}
+
+.CRS-estadisticas .CRS-valor{
+    font-size: 18px;
+    font-weight: 600;
+    color: #786450;
+}
+
+.CRS-estadisticas .CRS-parametro{
+    font-size: 11px;
+    font-weight: 400;
+    color: #786450;
+}
 
 
 
