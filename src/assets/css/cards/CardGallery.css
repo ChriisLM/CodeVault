@@ -1,0 +1,86 @@
+.CG-container{
+    background: linear-gradient(to top right, #d7b9c2 0%, #dd2d4a 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.CG-info-container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.CG-perfil{
+    position: relative;
+    float: left;
+    width: 144px;
+	height: 144px; 
+    margin: 4px 0 0 4px;
+	cursor: pointer;
+}
+
+.CG-perfil img{
+    width: 144px;
+	height: 144px; 
+}
+
+.CG-perfil .CG-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+
+.CG-perfil:hover .CG-overlay{
+    opacity: 0.4;
+}
+
+.CG-perfil .CG-plus{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    margin: -25px 0 0 -25px;
+    background: #EC6565;
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.5);
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    transform: scale(2);
+}
+
+.CG-perfil .CG-plus::before{
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 2px;
+    top: 24px;
+    left: 18px;
+    background: #fff;
+}
+
+.CG-perfil .CG-plus::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 14px;
+    top: 18px;
+    left: 24px;
+    background: #fff;
+}
+
+.CG-perfil:hover .CG-plus{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+}
