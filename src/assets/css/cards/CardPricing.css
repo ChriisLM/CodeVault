@@ -1,0 +1,167 @@
+.CPR-container{
+    background: linear-gradient(to top right, #adcfee 0%, #235789 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #5E5E5E;
+}
+
+.CPR-info-container{
+    position: absolute;
+    width: 380px;
+    height: 300px;
+    background-color: #E9EDEF;
+    border-radius: 3px;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.CPR-planes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.CPR-plan{
+	width: 110px;
+	height: 140px;
+    background: #fff;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .4s ease-in-out;
+}
+
+.CPR-plan:hover{
+    transform: scale(1.05) translate3d(0,0,0);
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.CPR-basico:hover .CPR-llenado{
+    background-color: brown;
+    transform: scaleX(0.3) translate3d(0,0,0);
+}
+
+.CPR-basico:hover ~ .CPR-datos-container .CPR-usuarios .CPR-llenado, 
+.CPR-basico:hover ~ .CPR-datos-container .CPR-gigabytes .CPR-llenado, 
+.CPR-basico:hover ~ .CPR-datos-container .CPR-proyectos .CPR-llenado{
+    transform: scaleX(0.05) translate3d(0,0,0);
+}
+
+.CPR-pro:hover ~ .CPR-datos-container .CPR-usuarios .CPR-llenado{
+    transform: scaleX(0.3) translate3d(0,0,0);
+}
+.CPR-pro:hover ~ .CPR-datos-container .CPR-gigabytes .CPR-llenado{
+    transform: scaleX(0.7) translate3d(0,0,0);		
+}
+.CPR-pro:hover ~ .CPR-datos-container .CPR-proyectos .CPR-llenado{
+    transform: scaleX(0.5) translate3d(0,0,0);
+}
+
+.CPR-premium:hover ~ .CPR-datos-container .CPR-usuarios .CPR-llenado, 
+.CPR-premium:hover ~ .CPR-datos-container .CPR-gigabytes .CPR-llenado, 
+.CPR-premium:hover ~ .CPR-datos-container .CPR-proyectos .CPR-llenado{
+    transform: scaleX(1) translate3d(0,0,0);
+}
+
+.CPR-plan .CPR-titulo{
+    height: 36px;
+    text-align: center;
+    background: #7DD0ED;
+    color: #fff;
+    font-weight: 600;
+    line-height: 36px;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.CPR-plan .CPR-price{
+	text-align: center;
+    font-size: 30px;	
+    line-height: 30px;
+    font-weight: 700;
+    padding: 10px 0 17px 0;
+    transition: all .3s ease-in-out;
+}
+
+.CPR-plan .CPR-price span{
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    transition: all .3s ease-in-out
+}
+
+.CPR-plan:hover .CPR-titulo{
+    background-color: #27A6D2;
+}
+
+.CPR-plan:hover .CPR-price, .CPR-plan:hover span{
+    color: #27A6D2;
+}
+
+
+.CPR-plan .CPR-linea{
+    height: 3px;
+    background: #E4E4E4;
+    margin: 0 auto 7px auto;
+}
+
+.CPR-plan .CPR-linea:nth-child(1){
+    width: 75%;
+}
+
+.CPR-plan .CPR-linea:nth-child(2){
+    width: 45%;
+}
+
+.CPR-datos-container{
+    position: absolute;
+	height: 130px;
+	width: 355px;
+	top: 160px;
+	left: 13px;
+	background: #fff;
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.CPR-datos-container .CPR-datos{
+    margin: 10px 15px 0 15px;
+}
+
+.CPR-datos-container .CPR-datos .CPR-texto{
+    font-size: 12px;
+    height: 20px;
+}
+
+.CPR-datos-container .CPR-datos .CPR-texto .CPR-izq{
+    float: left;
+}
+
+.CPR-datos-container .CPR-datos .CPR-texto .CPR-der{
+    float: right;
+}
+
+.CPR-datos-container .CPR-datos .CPR-linea{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 10px;
+    background: #E9EDEF;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.CPR-datos-container .CPR-datos .CPR-linea .CPR-llenado{
+    position: relative;
+    z-index: 1;
+    height: 10px;
+    width: 100%;
+    background: #7DD0ED;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}

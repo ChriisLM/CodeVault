@@ -1,5 +1,6 @@
 import CardClima from "../Components/Cards/CardClima"
 import CardGallery from "../Components/Cards/CardGallery"
+import CardPricing from "../Components/Cards/CardPricing"
 import CardRedSocial from "../Components/Cards/CardRedSocial"
 import Header from "../Components/Header"
 import "../assets/css/Cards.css"
@@ -18,7 +19,7 @@ function Cards() {
                     <CardClima/>
                     <CardGallery/>
                     <div className="card"></div>
-                    <div className="card"></div>
+                    <CardPricing/>
                     <div className="card"></div>
                 </section>
             </article>
